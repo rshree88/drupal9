@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the location time display.
+ *
+ * Available variables
+ * - datetime: Current datetime based on time set in the config.
+ * - location: User location set in the config.
+ *
+ * @ingroup themeable
+ */
+#}
+<h3>
+  <b>{{ 'Your location and Current date time' }}</b>
+</h3>
+<p>
+  {{ location.country }}, {{ location.city }}, {{ datetime }}
+</p>

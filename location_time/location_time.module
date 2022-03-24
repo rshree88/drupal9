@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Location_time module related hook and functions.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function location_time_theme() {
+  return [
+    'location_time_display' => [
+      'variables' => [
+        'datetime' => NULL,
+        'location' => NULL,
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
